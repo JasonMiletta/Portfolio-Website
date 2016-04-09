@@ -1,0 +1,17 @@
+﻿'use strict';
+
+var portfolioApp = angular.module('portfolioApp', ['ngRoute'])
+    .config(function($routeProvider) {
+        $routeProvider
+            .when('/', 
+            {
+                templateUrl: 'app/components/home/home.html',
+                controller: 'HomeController'
+            })
+            .when('/home',
+            {
+                templateUrl: 'app/components/home/home.html',
+                controller: 'HomeController'
+            })
+    })
+        ;

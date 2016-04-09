@@ -12,43 +12,24 @@
                 Home
             </div>
                 <ul class="nav nav-tabs">
-                    <li><a href="app/Game1_Block Dodger/index.html">Game 1</a></li>
-                    <li><a href="app/Game2_Onslaught/Onslaught.html">Game 2</a></li>
-                    <li><a href="app/Game3_ShortCircuit/Short Circuit.html">Game 3</a></li>
-                    <li><a href="app/Game4_Knights/Knight.html">*Under Contsruction* Game 4</a></li>
+                    <li<a href="#/home">Home</a></li>
+                    <li><a href="assets/html5Games/Game1_Block Dodger/index.html">Game 1</a></li>
+                    <li><a href="assets/html5Games/Game2_Onslaught/Onslaught.html">Game 2</a></li>
+                    <li><a href="assets/html5Games/Game3_ShortCircuit/Short Circuit.html">Game 3</a></li>
+                    <li><a href="assets/html5Games/Game4_Knights/Knight.html">*Under Contstruction* Game 4</a></li>
                 </ul>
         </nav>
         <div class="container-fluid">
-            <div ng-controller="IndexController">
-                <div class="row">
-                    <img class="media img-rounded center-block" height="350" ng-src="{{me.PictureUrl}}" alt="{{me.Name}}" />
-                    
-                </div>
-                <div class="row">
-                    <h1 class="text-center">
-                        {{me.Name}} - {{me.Title}}
-                    </h1>
-                </div>
-                <div class="row btn-group">
-                    <button class="btn" type="button">
-                        <a href="https://github.com/JasonMiletta">GitHub</a>
-                    </button>
-                    <button class="btn" type="button">
-                        <a href="https://codepen.io/JasonMiletta">CodePen</a>
-                    </button>
-                    <button class="btn" type="button">
-                        <a href="https://linkedin.com/in/jasonmiletta">LinkedIn</a>
-                    </button>
-                </div>
-            </div>
+            <div ng-view></div>
         </div>
 
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="app/js/app.js"></script>
-    <script src="app/js/IndexController.js"></script>
+    <script src="app/js/app.module.js"></script>
+    <script src="app/components/home/HomeController.js"></script>
 </body>
 </html>

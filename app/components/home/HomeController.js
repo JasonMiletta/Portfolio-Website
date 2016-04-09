@@ -1,12 +1,12 @@
 ﻿'use strict';
 
- portfolioApp.controller('IndexController',
+ portfolioApp.controller('HomeController',
         function ($scope) {
             
             $scope.me = {
                 Name : 'Jason Miletta',
                 Title : 'Software Engineer',
-                PictureUrl : '/app/img/JasonMiletta.jpg'
+                PictureUrl : '/assets/img/JasonMiletta.jpg'
             }
         }
     )
