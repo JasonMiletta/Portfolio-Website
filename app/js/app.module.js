@@ -13,5 +13,9 @@ var portfolioApp = angular.module('portfolioApp', ['ngRoute'])
                 templateUrl: 'app/components/home/home.html',
                 controller: 'HomeController'
             })
-    })
-        ;
+            .when('/htmlGames',
+            {
+                templateUrl: 'app/components/htmlGames/htmlGames.html',
+                controller: 'htmlGameController'
+            })
+    });
