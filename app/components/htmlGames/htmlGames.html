@@ -1,16 +1,13 @@
 ﻿<div>
-    <div class="nav">
-        <ul class="nav nav-tabs">
-            <li class="active">
-                <div data-toggle="tab">
-                    Here's a few HTML5 games I created using the Phaser javascript framework.
-                </div>
-            </li>
-            <li><a href="#" data-toggle="tab" aria-controls="">Game 1</a></li>
-            <li><a href="#" data-toggle="tab">Game 2</a></li>
-            <li><a href="#" data-toggle="tab">Game 3</a></li>
-            <li><a href="#" data-toggle="tab">Game 4</a></li>
-        </ul>
+    <div class="row" ng-repeat="game in games">
+        <div class="col-xs-6 col-md-3">
+            <a href="{{game.fileSrc}}" target="_blank" class="thumbnail">
+                <img alt="{{game.name}}"  />
+            </a>
+        </div>
     </div>
 
+    <div class="tab-content">
+
+    </div>
 </div>
