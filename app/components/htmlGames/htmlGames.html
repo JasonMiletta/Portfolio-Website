@@ -1,12 +1,12 @@
 ﻿<div>
-    <div class="row" ng-repeat="game in games">
-        <div class="col-xs-6 col-md-3">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6" ng-repeat="game in games">
+            <span>{{game.name}}</span>
             <a href="{{game.fileSrc}}" target="_blank" class="thumbnail">
-                <img alt="{{game.name}}"  />
+                <img ng-src="{{game.imgSrc}}" alt="{{game.name}}"  />
             </a>
         </div>
     </div>
-
     <div class="tab-content">
 
     </div>
