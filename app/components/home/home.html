@@ -1,14 +1,17 @@
 ﻿<div>
     <div class="row">
-        <div class="jumbotron">
-            <div>
-                <img height="256" class="img-rounded center-block" ng-src="{{me.PictureUrl}}" alt="{{me.Name}}" />
+            <div class="row">
+                <div class="col-sm-6">
+                    <img height="256" class="img-rounded center-block" ng-src="{{me.PictureUrl}}" alt="{{me.Name}}" />
+                </div>
+                <div class="col-sm-6">
+                    <h1 class="text-center">
+                        {{me.Name}}
+                    </h1>
+                    <p>Hey there! This is my portfolio website, made to show off any of the projects i've worked on or the things I've created.</p>
+                    <p>The site is still a work in progress so formatting and things are going to look off but feel free to click around!</p>
+                </div>
             </div>
-            <h1 class="text-center">
-                {{me.Name}}
-            </h1>
-            <p>Hey there! This is my portfolio website to show off any of the things i've done or the projects I've created.</p>
-        </div>
     </div>
     <div class="row text-center">
         <div class="btn-group">
