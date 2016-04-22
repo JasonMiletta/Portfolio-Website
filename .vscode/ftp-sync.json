@@ -1,0 +1,20 @@
+{
+    "remotePath": "./jasonmiletta.com/",
+    "host": "jasonmiletta.com",
+    "username": "jasmil33",
+    "password": "f00glebear",
+    "port": "",
+    "protocol": "ftp",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\App_Data",
+        "\\node_modules",
+        "Web.config",
+        "website.publishproj"
+    ]
+}
