@@ -22,4 +22,9 @@ var portfolioApp = angular.module('portfolioApp', ['ngRoute'])
             {
                 templateUrl: 'app/components/Contact/contact.html',
             })
+            .when('/iOSProjects',
+            {
+                templateUrl: 'app/components/iOSPortfolio/iOS.html',
+                controller: 'iOSController'
+            })
     });

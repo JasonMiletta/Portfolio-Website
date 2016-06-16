@@ -1,4 +1,4 @@
-portfolioApp.controller('IOSController',
+portfolioApp.controller('iOSController',
         function ($scope) {
             
             $scope.projects = [
