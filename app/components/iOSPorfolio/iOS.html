@@ -3,7 +3,9 @@
     <div class="row">
         <div ng-repeat="project in projects">
             <p>{{project.name}}</p>
+            <img ng-src="{{project.imgSrc}}" alt="{{project.name}}" />
             <p>{{project.desc}}</p>
+            <a href="{{project.fileSrc}}" target="_blank" class="thumbnail"/>
         </div>
     </div>
 </div>
