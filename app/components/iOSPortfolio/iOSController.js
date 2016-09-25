@@ -4,8 +4,8 @@ portfolioApp.controller('iOSController',
             $scope.projects = [
                 {
                     name : 'Fitness Tracker',
-                    imgSrc : 'assets/img/iOSThumbnails/test.png',
-                    fileSrc: 'app/iOSProjects/FitnessProject.zip',
+                    imgSrc : 'assets/iOSProjects/FitnessAppScreenshot.png',
+                    fileSrc: 'assets/iOSProjects/FitnessProject.zip',
                     desc : 'Fitness app for tracking workouts and exercises with specific reps, sets, and weights'
                 }
             ];

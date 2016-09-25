@@ -5,7 +5,7 @@
             "name": "Launch Chrome against localhost, with sourcemaps",
             "type": "chrome",
             "request": "launch",
-            "url": "http://localhost:8080/jasonmiletta.com",
+            "url": "http://localhost:8080/jasonmiletta.com/#/home",
             "sourceMaps": true,
             "webRoot": "${workspaceRoot}"
         },
