@@ -27,4 +27,9 @@ var portfolioApp = angular.module('portfolioApp', ['ngRoute'])
                 templateUrl: 'app/components/iOSPortfolio/iOS.html',
                 controller: 'iOSController'
             })
+            .when('/aboutMe',
+            {
+                templateUrl: 'app/components/aboutMe/aboutMe.html',
+                controller: 'aboutMeController'
+            })
     });
