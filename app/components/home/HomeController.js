@@ -5,7 +5,8 @@
             
             $scope.me = {
                 Name : 'Jason Miletta',
-                Title : 'Software Engineer'
+                Title : 'Software Engineer',
+                PictureUrl : '/assets/img/JasonMiletta.jpg'
             }
         }
     )

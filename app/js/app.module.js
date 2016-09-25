@@ -30,6 +30,6 @@ var portfolioApp = angular.module('portfolioApp', ['ngRoute'])
             .when('/aboutMe',
             {
                 templateUrl: 'app/components/aboutMe/aboutMe.html',
-                controller: 'aboutMeController'
+                controller: 'HomeController'
             })
     });
