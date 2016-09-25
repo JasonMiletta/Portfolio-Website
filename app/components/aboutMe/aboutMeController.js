@@ -1,6 +1,6 @@
 'use strict';
 
- portfolioApp.controller('AboutMeController',
+ portfolioApp.controller('aboutMeController',
         function ($scope) {
             
             $scope.me = {

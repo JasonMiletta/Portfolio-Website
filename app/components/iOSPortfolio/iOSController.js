@@ -1,3 +1,5 @@
+'use strict';
+
 portfolioApp.controller('iOSController',
         function ($scope) {
             

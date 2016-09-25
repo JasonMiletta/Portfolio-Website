@@ -2,10 +2,13 @@
     <p>This page is meant to act as a portfolio for my iOS projects</p>
     <div class="row">
         <div ng-repeat="project in projects">
-            <p>{{project.name}}</p>
-            <img ng-src="{{project.imgSrc}}" alt="{{project.name}}" />
-            <p>{{project.desc}}</p>
-            <a href="{{project.fileSrc}}" target="_blank" class="thumbnail"/>
+            <div class="container">
+                <p>{{project.name}}</p>
+                <p>{{project.desc}}</p>
+                <a href="{{project.fileSrc}}" target="_blank" class="thumbnail">
+                    <img ng-src="{{project.imgSrc}}" alt="{{project.name}}" />
+                </a>
+            </div>
         </div>
     </div>
 </div>
