@@ -1,4 +1,4 @@
-﻿<div class="col-xs-10 col-xs-offset-1">
+﻿<div>
     <div class="row">
         <p>
             Here's some HTML 5 games I created with javascript using the 
@@ -11,7 +11,7 @@
         </p>
     </div>
     <div class="row">
-        <div class="col-sm-12 col-md-6" ng-repeat="game in games">
+        <div class="col-sm-12 col-md-4" ng-repeat="game in games">
             <div class="card">
                 <div class="view overlay hm-white-slight">
                     <a href="{{game.fileSrc}}" target="_blank" class="thumbnail">
@@ -20,8 +20,8 @@
                 </div>
                 <div class="card-body">
                     <h4 class="card-title">{{game.name}}</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+                    <p class="card-text">{{game.description}}</p>
+                    <a href="#" class="btn btn-primary">Play</a>
                 </div>
             </div>
         </div>
