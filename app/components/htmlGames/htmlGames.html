@@ -13,15 +13,17 @@
     <div class="row">
         <div class="col-sm-12 col-md-4" ng-repeat="game in games">
             <div class="card">
-                <div class="view overlay hm-white-slight">
+                <div class="view overlay hm-white-slight d-flex justify-content-center" style="height:250px">
                     <a href="{{game.fileSrc}}" target="_blank" class="thumbnail">
-                        <img ng-src="{{game.imgSrc}}" alt="{{game.name}}" />
+                        <img ng-src="{{game.imgSrc}}" alt="{{game.name}}"/>
                     </a>
                 </div>
-                <div class="card-body">
+                <div class="card-body" style="height:250px">
                     <h4 class="card-title">{{game.name}}</h4>
                     <p class="card-text">{{game.description}}</p>
-                    <a href="#" class="btn btn-primary">Play</a>
+                    <div class="d-flex jusitfy-content-end">
+                        <a href="#" class="btn btn-primary blue-grey">Play</a>
+                    </div>
                 </div>
             </div>
         </div>
