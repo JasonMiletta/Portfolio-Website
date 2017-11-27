@@ -5,9 +5,21 @@
         <link rel="stylesheet" href="assets/css/bootstrap-material-design.min.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="assets/css/mdb.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <script src="assets/js/angular.min.js"></script>
+        <script src="assets/js/angular-route.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/mdb.min.js"></script>
+        <script src="assets/js/bootstrap-material-design.min.js"></script>
+        <script src="app/js/app.module.js"></script>
+        <script src="app/components/home/HomeController.js"></script>
+        <script src="app/components/htmlGames/htmlGameController.js"></script>
+        <script src="app/components/iOSPortfolio/iOSController.js"></script>
     </head>
     <body>
-        <div class="container" style="height:100%; min-height:100%">
+        <div role="main" class="content container">
             <header>
                     <nav id="navBar" class="navbar navbar-expand-lg scrolling-navbar navbar-dark blue-grey" role="navigation">
                             <a class="navbar-brand" href="#home">Jason Miletta</a>
@@ -52,9 +64,15 @@
                     </div>
                 </div>
                 <div class="row flex-center">
-                    <a class="btn-floating btn-medium btn-li waves-light"><i class="fa fa-linkedin fa-lg mr-md-4"> </i></a>
-                    <a class="btn-floating btn-medium btn-git waves-light"><i class="fa fa-github fa-lg mr-md-4"> </i></a>
-                    <a class="btn-floating btn-medium btn-tw waves-light" ><i class="fa fa-twitter fa-lg mr-md-4"> </i></a>
+                    <a class="btn-floating btn-medium btn-li waves-light" href="https://linkedin.com/in/jasonmiletta">
+                        <i class="fa fa-linkedin fa-lg m-md-4"> </i>
+                    </a>
+                    <a class="btn-floating btn-medium btn-git waves-light" href="https://github.com/JasonMiletta">
+                        <i class="fa fa-github fa-lg m-md-4"> </i>
+                    </a>
+                    <a class="btn-floating btn-medium btn-tw waves-light" href="https://twitter.com/jasonmiletta">
+                        <i class="fa fa-twitter fa-lg m-md-4"> </i>
+                    </a>
                 </div>
             </div>
             <div class="footer-copyright">
@@ -63,16 +81,5 @@
                     </div>
             </div>
         </footer>
-
-        <script src="assets/js/angular.min.js"></script>
-        <script src="assets/js/angular-route.min.js"></script>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/mdb.min.js"></script>
-        <script src="assets/js/bootstrap-material-design.min.js"></script>
-        <script src="app/js/app.module.js"></script>
-        <script src="app/components/home/HomeController.js"></script>
-        <script src="app/components/htmlGames/htmlGameController.js"></script>
-        <script src="app/components/iOSPortfolio/iOSController.js"></script>
     </body>
 </html>
