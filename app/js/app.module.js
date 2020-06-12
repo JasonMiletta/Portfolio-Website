@@ -13,6 +13,11 @@ var portfolioApp = angular.module('portfolioApp', ['ngRoute'])
                 templateUrl: 'app/components/home/home.html',
                 controller: 'HomeController'
             })
+            .when('/salesforce',
+            {
+                templateUrl: 'app/components/salesforce/salesforceProjects.html',
+                controller: 'salesforceProjectsController'
+            })
             .when('/projects',
             {
                 templateUrl: 'app/components/projects/projects.html',
