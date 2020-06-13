@@ -18,7 +18,7 @@ portfolioApp.controller('salesforceProjectsController',
                     description: 'Created a brand new community with custom Lightning components where users can ask and answer questions to provide support for other members encountering issues with game releases. ' + 
                     'This was also paired with a customized gamification system where users would gain incentives for contributing to the community.',
                     fileSrc: 'https://support.activision.com/community/s/',
-                    imgSrc: 'assets/img/SalesforceImages/Activisionhomepage.png',
+                    imgSrc: 'assets/img/SalesforceImages/ActivisionHomepage.png',
                     tag: 'Tech Lead - 7Summits',
                     button: 'visit'
                 },
