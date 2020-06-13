@@ -4,11 +4,11 @@
         <div class="col-sm-12 col-md-12 col-lg-12 p-4" ng-repeat="project in salesforceProjects">
             <div class="card">
                 <h5 class="card-header blue-grey lighten-1 white-text">{{project.tag}}</h5>
-                <div class="view overlay hm-white-slight d-flex justify-content-center align-items-center" style="height:250px">
-                    <div class="thumbnail col-sm-4">
+                <div class="row view overlay hm-white-slight d-flex justify-content-center align-items-center">
+                    <div class="thumbnail col-lg-4 col-md-12">
                         <img ng-src="{{project.imgSrc}}" alt="{{project.name}}"/>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body col-lg-8 col-md-12 px-5">
                         <h4 class="card-title">{{project.name}}</h4>
                         <p class="card-text">{{project.description}}</p>
                         <div ng-show="project.button" class="d-flex jusitfy-content-end">
