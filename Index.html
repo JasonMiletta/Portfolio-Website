@@ -1,40 +1,70 @@
 <!DOCTYPE html>
-<html ng-app="portfolioApp">
+<html ng-app="portfolioApp" style="height:100%">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Jason Miletta</title>
-        <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap-material-design.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="assets/css/mdb.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <script src="assets/js/angular.min.js"></script>
+        <script src="assets/js/angular-route.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/mdb.min.js"></script>
+        <script src="assets/js/bootstrap-material-design.min.js"></script>
+        <script src="app/js/app.module.js"></script>
+        <script src="app/components/home/HomeController.js"></script>
+        <script src="app/components/salesforce/salesforceProjectsController.js"></script>
+        <script src="app/components/projects/projectsController.js"></script>
     </head>
-<body>
-    <div>
-        <nav id="navBar" class="navbar navbar-default" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#home">Jason Miletta</a>
-                </div>
-                <ul class="nav nav-tabs">
-                    <li><a href="#htmlGames">Html5 Games</a></li>
-                    <li><a href="#iOSProjects">iOS Projects</a></li>
-                    <li><a href="#aboutMe">About Me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="assets/img/JasonMilettaResume.pdf" target="_blank">Resume</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="jumbotron col-xs-12 col-sm-8 col-sm-offset-2" ng-view></div>
+    <body>
+        <div role="main" class="content container">
+            <header>
+                    <nav id="navBar" class="navbar navbar-expand-sm scrolling-navbar navbar-dark blue-grey" role="navigation">
+                            <a class="navbar-brand" href="#home">Jason Miletta</a>
+                        
+                            <!-- Collapse button -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item"><a class="nav-link" href="#salesforce">Salesforce</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#projects">GameDev</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="assets/JasonMilettaResume.pdf" target="_blank">Resume</a></li>
+                                </ul>
+                            </div>
+                    </nav>
+            </header>
+            <div class="container-fluid">
+                    <div class="jumbotron animated fadeInDown" ng-view></div>
             </div>
         </div>
-        <div class="text-center"> Copyright &copy; Jason Miletta 2016 </div>
-    </div>
+        <footer class="page-footer unique-color-dark center-on-small-only">
 
-    <script src="assets/js/angular.min.js"></script>
-    <script src="assets/js/angular-route.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="app/js/app.module.js"></script>
-    <script src="app/components/home/HomeController.js"></script>
-    <script src="app/components/htmlGames/htmlGameController.js"></script>
-    <script src="app/components/iOSPortfolio/iOSController.js"></script>
-</body>
+            <div class="container">
+                <div class="row flex-center">
+                    <a class="btn-floating btn-medium btn-li waves-light" href="https://linkedin.com/in/jasonmiletta">
+                        <i class="fa fa-linkedin fa-lg p-xs-2"> </i>
+                    </a>
+                    <a class="btn-floating btn-medium btn-git waves-light" href="https://github.com/JasonMiletta">
+                        <i class="fa fa-github fa-lg p-xs-2"> </i>
+                    </a>
+                    <a class="btn-floating btn-medium btn-tw waves-light" href="https://twitter.com/jasonmiletta">
+                        <i class="fa fa-twitter fa-lg p-xs-2"> </i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                    <div class="container-fluid"> 
+                        &copy; 2020 / Powered by <a href="https://angularjs.org/">AngularJS</a> and <a href="https://mdbootstrap.com/">MDBootstrap</a>
+                    </div>
+            </div>
+        </footer>
+    </body>
 </html>

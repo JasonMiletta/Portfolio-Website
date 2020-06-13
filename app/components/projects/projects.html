@@ -1,0 +1,62 @@
+<div>
+    <h1>Unity Games</h1>
+    <div class="row p-sm-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 p-xs-2" ng-repeat="project in unityProjects">
+            <div class="card">
+                <h5 class="card-header blue-grey lighten-1 white-text">{{project.tag}}</h5>
+                <div class="view overlay hm-white-slight d-flex justify-content-center align-items-center" style="height:250px">
+                    <a href="{{project.fileSrc}}" target="_blank" class="thumbnail">
+                        <img ng-src="{{project.imgSrc}}" alt="{{project.name}}"/>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">{{project.name}}</h4>
+                    <p class="card-text">{{project.description}}</p>
+                    <div ng-show="project.button" class="d-flex jusitfy-content-end">
+                        <a href="{{project.fileSrc}}" class="btn btn-primary blue-grey">{{project.button}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>Html Games</h1>
+    <div class="row p-sm-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 p-xs-2" ng-repeat="project in htmlProjects">
+            <div class="card">
+                <h5 class="card-header blue-grey lighten-1 white-text">{{project.tag}}</h5>
+                <div class="view overlay hm-white-slight d-flex justify-content-center align-items-center" style="height:250px">
+                    <a href="{{project.fileSrc}}" target="_blank" class="thumbnail">
+                        <img ng-src="{{project.imgSrc}}" alt="{{project.name}}"/>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">{{project.name}}</h4>
+                    <p class="card-text">{{project.description}}</p>
+                    <div ng-show="project.button" class="d-flex jusitfy-content-end">
+                        <a href="{{project.fileSrc}}" class="btn btn-primary blue-grey">{{project.button}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>iOS Projects</h1>
+    <div class="row p-sm-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 p-xs-2" ng-repeat="project in iOSProjects">
+            <div class="card">
+                <h5 class="card-header blue-grey lighten-1 white-text">{{project.tag}}</h5>
+                <div class="view overlay hm-white-slight d-flex justify-content-center align-items-center" style="height:250px">
+                    <a href="{{project.fileSrc}}" target="_blank" class="thumbnail">
+                        <img ng-src="{{project.imgSrc}}" alt="{{project.name}}"/>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">{{project.name}}</h4>
+                    <p class="card-text">{{project.description}}</p>
+                    <div ng-show="project.button" class="d-flex jusitfy-content-end">
+                        <a href="{{project.fileSrc}}" class="btn btn-primary blue-grey">{{project.button}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

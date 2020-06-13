@@ -13,19 +13,24 @@ var portfolioApp = angular.module('portfolioApp', ['ngRoute'])
                 templateUrl: 'app/components/home/home.html',
                 controller: 'HomeController'
             })
-            .when('/htmlGames',
+            .when('/salesforce',
             {
-                templateUrl: 'app/components/htmlGames/htmlGames.html',
-                controller: 'htmlGameController'
+                templateUrl: 'app/components/salesforce/salesforceProjects.html',
+                controller: 'salesforceProjectsController'
+            })
+            .when('/projects',
+            {
+                templateUrl: 'app/components/projects/projects.html',
+                controller: 'projectsController'
+            })
+            .when('/gamedev',
+            {
+                templateUrl: 'app/components/projects/projects.html',
+                controller: 'projectsController'
             })
             .when('/contact',
             {
                 templateUrl: 'app/components/Contact/contact.html',
-            })
-            .when('/iOSProjects',
-            {
-                templateUrl: 'app/components/iOSPortfolio/iOS.html',
-                controller: 'iOSController'
             })
             .when('/aboutMe',
             {
