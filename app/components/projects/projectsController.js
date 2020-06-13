@@ -2,15 +2,41 @@
 
 portfolioApp.controller('projectsController',
         function ($scope) {
-            $scope.projects = [
+            $scope.unityProjects = [
                 {
                     name: 'Discharge',
-                    description: 'Created originally for Ludum Dare 39 as a first, complete (albeit tiny!) game. Visit the Itch.io page for more info.',
+                    description: 'Created originally for Ludum Dare 39 as a first, complete (albeit tiny!) game.',
                     fileSrc: 'https://jasonmiletta.itch.io/discharge',
                     imgSrc: 'assets/img/Discharge.PNG',
                     tag: 'Unity',
                     button: 'itch.io'
                 },
+                {
+                    name: '(Unfinished) - Turn-based Grid Strategy Game',
+                    description: '',
+                    fileSrc: '',
+                    imgSrc: 'https://i.imgur.com/5ufgvou.gif',
+                    tag: 'Unity',
+                    button: ''
+                },
+                {
+                    name: '(Unfinished) - Space Colony Game',
+                    description: '',
+                    fileSrc: '',
+                    imgSrc: 'https://i.imgur.com/kXrLsLF.gif',
+                    tag: 'Unity',
+                    button: ''
+                },
+                {
+                    name: '(Unfinished) - VR Crafting',
+                    description: '',
+                    fileSrc: '',
+                    imgSrc: 'https://i.imgur.com/u6X6Y5R.gif',
+                    tag: 'Unity',
+                    button: ''
+                }
+            ];
+            $scope.htmlProjects = [
                 {
                     name: 'Block Dodger',
                     description: 'Blocks go up, you fall down. Last as long as you can. This was an exercise with basic free form moving.',
@@ -34,7 +60,10 @@ portfolioApp.controller('projectsController',
                     imgSrc: 'assets/html5Games/Game3_ShortCircuit/assets/Thumbnail.png',
                     tag: 'HTML5',
                     button: 'Play'
-                },
+                }
+            ];
+
+            $scope.iOSProjects = [
                 {
                     name : 'Fitness Tracker',
                     imgSrc : 'assets/iOSProjects/FitnessAppScreenshot.png',
