@@ -2,7 +2,7 @@
 
 portfolioApp.controller('projectsController',
         function ($scope) {
-            $scope.unrealEngineProjects = [
+            $scope.gameProjects = [
                 {
                     name: 'JumpBear',
                     description: '3D platformer built using UE4.',
@@ -10,9 +10,7 @@ portfolioApp.controller('projectsController',
                     imgSrc: 'assets/img/JumpBearThumbnail.png',
                     tag: 'UE4',
                     button: 'itch.io'
-                }
-            ];
-            $scope.unityProjects = [
+                },
                 {
                     name: 'Discharge',
                     description: 'Created originally for Ludum Dare 39 as a first, complete (albeit tiny!) game.',
@@ -21,6 +19,8 @@ portfolioApp.controller('projectsController',
                     tag: 'Unity',
                     button: 'itch.io'
                 },
+            ];
+            $scope.pastProjects = [
                 {
                     name: '(Unfinished) - Turn-based Grid Strategy Game',
                     description: '',
@@ -44,9 +44,7 @@ portfolioApp.controller('projectsController',
                     imgSrc: 'https://i.imgur.com/u6X6Y5R.gif',
                     tag: 'Unity',
                     button: ''
-                }
-            ];
-            $scope.htmlProjects = [
+                },
                 {
                     name: 'Block Dodger',
                     description: 'Blocks go up, you fall down. Last as long as you can. This was an exercise with basic free form moving.',
@@ -70,10 +68,7 @@ portfolioApp.controller('projectsController',
                     imgSrc: 'assets/html5Games/Game3_ShortCircuit/assets/Thumbnail.png',
                     tag: 'HTML5',
                     button: 'Play'
-                }
-            ];
-
-            $scope.iOSProjects = [
+                },
                 {
                     name : 'Fitness Tracker',
                     imgSrc : 'assets/iOSProjects/FitnessAppScreenshot.png',
