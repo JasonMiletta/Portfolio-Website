@@ -25,7 +25,7 @@ portfolioApp.controller('projectsController',
                     name: '(Unfinished) - Turn-based Grid Strategy Game',
                     description: '',
                     fileSrc: '',
-                    imgSrc: 'https://i.imgur.com/5ufgvou.gif',
+                    imgSrc: 'assets/img/strategyGameGif.gif',
                     tag: 'Unity',
                     button: ''
                 },
@@ -33,7 +33,7 @@ portfolioApp.controller('projectsController',
                     name: '(Unfinished) - Space Colony Game',
                     description: '',
                     fileSrc: '',
-                    imgSrc: 'https://i.imgur.com/kXrLsLF.gif',
+                    imgSrc: 'assets/img/colonyGameGif.gif',
                     tag: 'Unity',
                     button: ''
                 },
@@ -41,7 +41,7 @@ portfolioApp.controller('projectsController',
                     name: '(Unfinished) - VR Crafting',
                     description: '',
                     fileSrc: '',
-                    imgSrc: 'https://i.imgur.com/u6X6Y5R.gif',
+                    imgSrc: 'assets/img/vrGameGif.gif',
                     tag: 'Unity',
                     button: ''
                 },
@@ -74,7 +74,7 @@ portfolioApp.controller('projectsController',
                     imgSrc : 'assets/iOSProjects/FitnessAppScreenshot.png',
                     fileSrc: 'assets/iOSProjects/FitnessProject.zip',
                     description : 'Fitness app for tracking workouts and exercises with specific reps, sets, and weights. ' + 
-                        'This app was created a test project to get a feel for Xcode and developing an iOS app. Click the thumb ' +
+                        'This app was created a test project to get a feel for Xcode and developing an iOS app. Click the thumbnail ' +
                         'to download a copy of the app project.',
                     tag: 'iOS',
                     button: ''
