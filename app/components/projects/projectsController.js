@@ -2,6 +2,16 @@
 
 portfolioApp.controller('projectsController',
         function ($scope) {
+            $scope.unrealEngineProjects = [
+                {
+                    name: 'JumpBear',
+                    description: '3D platformer built using UE4.',
+                    fileSrc: 'https://jasonmiletta.itch.io/jumpbear',
+                    imgSrc: 'assets/img/JumpBearThumbnail.png',
+                    tag: 'UE4',
+                    button: 'itch.io'
+                }
+            ];
             $scope.unityProjects = [
                 {
                     name: 'Discharge',
