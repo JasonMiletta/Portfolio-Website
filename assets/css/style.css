@@ -5,7 +5,11 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: #878b96;
 }
+.bodyContent {
+    background-color: #fdfdfd;
+} 
 .content {
     flex: 1 0 auto;
 }

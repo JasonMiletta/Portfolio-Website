@@ -1,8 +1,53 @@
 ﻿<div class="col-xs-10 col-xs-offset-1">
     <div class="row">
-        <div class="col-sm-12">
-            <p class="text-center">My name's Jason Miletta and I'm a Software Engineer out of Milwaukee, Wisconsin. Professionally, I'm currently a Technical Lead in the Salesforce space with a focus on Service and Community Cloud. 
-                On the side I'm a hobbyist game developer dipping my toes in game design, modelling and animation. At times I've chipped in on mobile apps or built websites like the one you're looking at right now!</p>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <p class="text-center"> My name's Jason Miletta and this is my portfolio site!
+                Professionally I'm a software engineer based out of Milwaukee, Wisconsin, currently working in the Salesforce space with a focus on Service and Community Cloud. 
+                On the side I'm a game developer doing a bit of game design, modelling and animation which you can find some of here.
+            </p>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    <br/>
+    <h1>Games</h1>
+    <div class="row p-sm-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 p-xs-2" ng-repeat="project in gameProjects">
+            <div class="card">
+                <h5 class="card-header blue-grey lighten-1 white-text">{{project.tag}}</h5>
+                <div class="view overlay hm-white-slight d-flex justify-content-center align-items-center" style="height:250px">
+                    <a href="{{project.fileSrc}}" target="_blank" class="thumbnail">
+                        <img ng-src="{{project.imgSrc}}" alt="{{project.name}}"/>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">{{project.name}}</h4>
+                    <p class="card-text">{{project.description}}</p>
+                    <div ng-show="project.button" class="d-flex jusitfy-content-end">
+                        <a href="{{project.fileSrc}}" class="btn btn-primary blue-grey">{{project.button}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>Past Projects</h1>
+    <div class="row p-sm-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 p-xs-2" ng-repeat="project in pastProjects">
+            <div class="card">
+                <h5 class="card-header blue-grey lighten-1 white-text">{{project.tag}}</h5>
+                <div class="view overlay hm-white-slight d-flex justify-content-center align-items-center" style="height:250px">
+                    <a href="{{project.fileSrc}}" target="_blank" class="thumbnail">
+                        <img ng-src="{{project.imgSrc}}" alt="{{project.name}}"/>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">{{project.name}}</h4>
+                    <p class="card-text">{{project.description}}</p>
+                    <div ng-show="project.button" class="d-flex jusitfy-content-end">
+                        <a href="{{project.fileSrc}}" class="btn btn-primary blue-grey">{{project.button}}</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
