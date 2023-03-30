@@ -23,6 +23,11 @@ var portfolioApp = angular.module('portfolioApp', ['ngRoute'])
                 templateUrl: 'app/components/projects/projects.html',
                 controller: 'projectsController'
             })
+            .when('/jumpbear2',
+            {
+                templateUrl: 'app/components/JumpBear2/jumpbear2.html',
+                controller: 'jumpbear2Controller'
+            })
             .when('/gamedev',
             {
                 templateUrl: 'app/components/projects/projects.html',
