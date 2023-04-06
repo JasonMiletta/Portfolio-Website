@@ -6,7 +6,8 @@
                 <h5 class="card-header blue-grey lighten-1 white-text">{{project.tag}}</h5>
                 <div class="view overlay hm-white-slight d-flex justify-content-center align-items-center" style="height:250px">
                     <a href="{{project.fileSrc}}" target="_blank" class="thumbnail">
-                        <img ng-src="{{project.imgSrc}}" alt="{{project.name}}"/>
+                        <img ng-if="project.imgSrc" ng-src="{{project.imgSrc}}" alt="{{project.name}}"/>
+                        <i ng-if="!project.imgSrc" class="{{project.iconClass}} fa-lg"> </i>
                     </a>
                 </div>
                 <div class="card-body">

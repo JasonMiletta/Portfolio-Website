@@ -16,3 +16,11 @@ body {
 .p-xs-2{
     padding: .5rem;
 }
+.thumbnail i {
+    color: grey;
+    font-size: 10em;
+}
+.imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+}

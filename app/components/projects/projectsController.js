@@ -4,8 +4,17 @@ portfolioApp.controller('projectsController',
         function ($scope) {
             $scope.gameProjects = [
                 {
+                    name: 'JumpBear 2 (WIP)',
+                    description: '3D platformer built using UE5. A continuation of my previous game stacking on more features and mechanics',
+                    fileSrc: '#jumpbear2',
+                    imgSrc: '',
+                    iconClass: 'fa fa-tools',
+                    tag: 'UE5',
+                    button: 'More'
+                },
+                {
                     name: 'JumpBear',
-                    description: '3D platformer built using UE4.',
+                    description: '3D platformer built using UE4 in the style of older action adventure games.',
                     fileSrc: 'https://jasonmiletta.itch.io/jumpbear',
                     imgSrc: 'assets/img/JumpBearThumbnail.png',
                     tag: 'UE4',

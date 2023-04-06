@@ -10,6 +10,15 @@
             }
             $scope.gameProjects = [
                 {
+                    name: 'JumpBear 2 (WIP)',
+                    description: '3D platformer built using UE5. A continuation of my previous game stacking on more features and mechanics',
+                    fileSrc: '#jumpbear2',
+                    imgSrc: '',
+                    iconClass: 'fa fa-tools',
+                    tag: 'UE5',
+                    button: 'More'
+                },
+                {
                     name: 'JumpBear',
                     description: '3D platformer built using UE4.',
                     fileSrc: 'https://jasonmiletta.itch.io/jumpbear',

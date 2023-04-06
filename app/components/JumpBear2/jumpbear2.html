@@ -1,0 +1,17 @@
+<div>
+    <h1>JumpBear 2</h1>
+    <br/>
+    <div class="p-sm-2">
+        JumpBear 2 is a work-in-progress sequel to my first proper game JumpBear. The game is in the style of older xbox/ps2 era action platformers or collect-a-thon games. 
+    </div>
+    <br/>
+    <div class="row imageGallery">
+        <div class="col-sm-12 col-md-6 col-lg-4 p-xs-2" ng-repeat="projectImage in projectImages">
+            <div class="">
+                <div class="view overlay hm-white-slight d-flex justify-content-center" style="height:250px">
+                    <img ng-src="{{projectImage.imgSrc}}" alt="{{projectImage.alt}}"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
