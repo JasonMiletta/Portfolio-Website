@@ -7,7 +7,7 @@ portfolioApp.controller('projectsController',
                     name: 'JumpBear 2 (WIP)',
                     description: '3D platformer built using UE5. A continuation of my previous game stacking on more features and mechanics',
                     fileSrc: '#jumpbear2',
-                    imgSrc: '',
+                    imgSrc: 'assets/img/jumpbear2Images/JumpBear2Title.png',
                     iconClass: 'fa fa-tools',
                     tag: 'UE5',
                     button: 'More'

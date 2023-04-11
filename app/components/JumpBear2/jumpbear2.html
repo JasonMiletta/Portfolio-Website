@@ -2,16 +2,52 @@
     <h1>JumpBear 2</h1>
     <br/>
     <div class="p-sm-2">
-        JumpBear 2 is a work-in-progress sequel to my first proper game JumpBear. The game is in the style of older xbox/ps2 era action platformers or collect-a-thon games. 
+        <p>
+        JumpBear 2 is a work-in-progress sequel to my first proper game, JumpBear. The game is a 3D action platformer, in similar style of older xbox/ps2 era collect-a-thon games. All of the assets are created by myself using
+        the following tools: 
+        </p>
+        <p>
+            <b>Blender</b> for modeling, rigging, and animations
+        </p>
+        <p>
+            <b>Krita</b> for any texture work
+        </p>
+        <p>
+            <b>Ableton</b> for any audio assets
+        </p>
+        <p>
+            <b>Unreal Engine 5</b>
+        </p>
     </div>
     <br/>
-    <div class="row imageGallery">
-        <div class="col-sm-12 col-md-6 col-lg-4 p-xs-2" ng-repeat="projectImage in projectImages">
-            <div class="">
-                <div class="view overlay hm-white-slight d-flex justify-content-center" style="height:250px">
-                    <img ng-src="{{projectImage.imgSrc}}" alt="{{projectImage.alt}}"/>
-                </div>
-            </div>
+
+    <div class="row" ng-repeat="projectVideo in projectVideos">
+        <div class="col-lg-6 imageGallery">
+            <video
+                id="my-video"
+                class="video-js"
+                controls
+                preload="auto"
+                muted="true"
+                width="480"
+                height="270"
+                data-setup="{}">
+                <source src="{{projectVideo.src}}" type="video/mp4" />
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank">
+                        supports HTML5 video
+                    </a>
+                </p>
+            </video>
+        </div>
+        <div class="col-lg-6" style="display: flex; align-items: center;">
+            <div>{{projectVideo.description}}</div>
+        </div>
+        <div class="col-lg-12">
+            <br>
         </div>
     </div>
+
 </div>

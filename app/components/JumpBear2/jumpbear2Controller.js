@@ -26,5 +26,22 @@ portfolioApp.controller('jumpbear2Controller',
                     alt: 'Timed puzzle gif'
                 }
             ]
+            $scope.projectVideos = [
+                {
+                    src: 'assets/img/jumpbear2Images/GrapplingHook.mp4',
+                    alt: 'Grapple Hook Video',
+                    description: 'The player has an array of movement mechanics ranging from wall jumps, dashes, grapple hooks and more. The primary goal is to explore the world and reward players who spend time mastering the movement mechanics.'
+                },
+                {
+                    src: 'assets/img/jumpbear2Images/PressurePlateLogic.mp4',
+                    alt: 'Pressure Plate and Switches Video',
+                    description: 'Solve puzzles using pressure plates, buttons, switches and more to unlock collectables or new paths forward. The game will more frequently combine platforming and puzzle mechanics together as the game goes on.'
+                },
+                {
+                    src: 'assets/img/jumpbear2Images/BreakTheTarget.mp4',
+                    alt: 'Break The Target Video',
+                    description: 'Timed puzzle sections and time attack challenges'
+                }
+            ]
         }
     )
