@@ -1,0 +1,72 @@
+<div>
+    <h1>VFX</h1>
+    <br/>
+    <div class="p-sm-2">
+        <p>
+        Particle effects created using Unreal Engine, Niagara, Unreal Materials, Blender for UV editing, and Krita for creating/modifying textures. 
+        </p>
+    </div>
+    <br/>
+    <div class="vfxContainer">
+        <div class="p-lg-6 videoColumn">
+            <div ng-repeat="example in vfxExamples">
+                <div class="col-g-12 imageGallery">
+                    <video
+                        id="my-video"
+                        class="video-js"
+                        controls
+                        loop="true"
+                        preload="auto"
+                        muted="true"
+                        width="480"
+                        data-setup="{}">
+                        <source src="{{example.src}}" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">
+                                supports HTML5 video
+                            </a>
+                        </p>
+                    </video>
+                </div>
+                <div class="col-lg-6" style="display: flex; align-items: center;">
+                    <div>{{example.description}}</div>
+                </div>
+                <div class="col-lg-12">
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="p-lg-6 videoColumn">
+            <div ng-repeat="example in vfxExamples2">
+                <div class="imageGallery">
+                    <video
+                        id="my-video"
+                        class="video-js"
+                        controls
+                        loop="true"
+                        preload="auto"
+                        muted="true"
+                        width="480"
+                        data-setup="{}">
+                        <source src="{{example.src}}" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">
+                                supports HTML5 video
+                            </a>
+                        </p>
+                    </video>
+                </div>
+                <div class="col-lg-6" style="display: flex; align-items: center;">
+                    <div>{{example.description}}</div>
+                </div>
+                <div class="col-lg-12">
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

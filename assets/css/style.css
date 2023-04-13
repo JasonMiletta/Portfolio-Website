@@ -24,3 +24,12 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+.vfxContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.videoColumn
+{
+    flex: 1;
+}
