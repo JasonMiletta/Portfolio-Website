@@ -28,6 +28,11 @@ var portfolioApp = angular.module('portfolioApp', ['ngRoute'])
                 templateUrl: 'app/components/JumpBear2/jumpbear2.html',
                 controller: 'jumpbear2Controller'
             })
+            .when('/vfxWork',
+            {
+                templateUrl: 'app/components/vfx/vfxWork.html',
+                controller: 'vfxController'
+            })
             .when('/gamedev',
             {
                 templateUrl: 'app/components/projects/projects.html',
