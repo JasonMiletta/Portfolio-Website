@@ -41,7 +41,17 @@ portfolioApp.controller('jumpbear2Controller',
                     src: 'assets/img/jumpbear2Images/BreakTheTarget.mp4',
                     alt: 'Break The Target Video',
                     description: 'Timed puzzle sections and time attack challenges'
-                }
+                },
+                {
+                    src: 'assets/img/jumpbear2Images/ProceduralPlatformTool.mp4',
+                    alt: 'Procedural Platform Tool',
+                    description: 'Tooling for creating platforms using closed splines for quick level blockouts.'
+                },
+                {
+                    src: 'assets/img/jumpbear2Images/ProceduralSplineTool.mp4',
+                    alt: 'Procedural Spline Mesh Tool',
+                    description: 'Tooling for placing meshes along splines for quick set dressing.'
+                },
             ]
         }
     )
